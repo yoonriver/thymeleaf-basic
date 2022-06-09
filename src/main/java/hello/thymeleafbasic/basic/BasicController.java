@@ -119,7 +119,7 @@ public class BasicController {
         list.add(new User("userB", 20));
         list.add(new User("userC", 30));
 
-        model.addAttribute(list);
+        model.addAttribute("users", list);
     }
 
     @GetMapping("/condition")
